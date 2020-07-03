@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\user\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\user\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_TurnSystemRoguelike.-574017700.00" t="ExcludeRecursive" />
+    <e p="C:\WorkSpace\TurnSystemRoguelike" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Script" t="Include">
+          <e p="Card" t="Include">
+            <e p="AttackCard.cs" t="Include" />
+            <e p="Card.cs" t="Include" />
+            <e p="CardData.cs" t="Include" />
+            <e p="Rotation.cs" t="Include" />
+            <e p="ShieldCard.cs" t="Include" />
+            <e p="SkillCard.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="TurnSystemRoguelike.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

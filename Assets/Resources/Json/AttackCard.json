@@ -1,0 +1,10 @@
+[
+    {
+        "CardName": "Test",
+        "Effect": null,
+        "Sound": null,
+        "Animator": null,
+        "Range": "3 2",
+        "Damage": 10
+    }
+]

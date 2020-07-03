@@ -1,0 +1,10 @@
+[
+    {
+        "CardName": "Test",
+        "Effect": null,
+        "Sound": null,
+        "Animator": null,
+        "Rotation": 255,
+        "ShieldDamage": 10
+    }
+]
