@@ -20,38 +20,55 @@ public static class JsonParser
             case CardType.Shield: return "Shield";
             case CardType.Skill: return "Skill";
         }
+
+        return null;
     }
     
     public static void ParseData(CardType type)
     {
+        byte attackCnt = 0;
+        byte shieldCnt = 0;
+        byte skillCnt = 0;
         string path = string.Format(@"Json\{0}Card.json", GetCardTypeString(type));
         string str = Resources.Load<Text>(path).text;
         JArray array = new JArray(str);
 
-        for (int i = 0; i < array.Count; ++i)
+        foreach (JObject jsonObj in array)
         {
             switch (type)
             {
                 case CardType.Attack:
-                    AttackCards.Add(new AttackCard(array[i]["CardName"], i, array[i]["Damage"], array[i]["Range"]));
+                    AttackCards.Add(
+                        new AttackCard(
+                            jsonObj["CardName"].ToString(), 
+                            attackCnt++, 
+                            int.Parse(jsonObj["Damage"].ToString()), 
+                            jsonObj["Range"].
+                                ToString().
+                                Split(' ').
+                                Select(x => int.Parse(x)).
+                                ToArray()));
                     break;
                 case CardType.Shield:
+                    ShieldCards.Add(
+                        new ShieldCard(
+                            jsonObj["CardName"].ToString(), 
+                            shieldCnt++,
+                            int.Parse(jsonObj["ShieldDamage"].ToString()),
+                            byte.Parse(jsonObj["Rotation"].ToString())));
                     break;
                 case CardType.Skill:
-                    break;
-            }
-        }
-
-        foreach (JObject jObject in array)
-        {
-            switch (type)
-            {
-                case CardType.Attack:
-                    AttackCards.Add(new AttackCard());
-                    break;
-                case CardType.Shield:
-                    break;
-                case CardType.Skill:
+                    SkillCards.Add(
+                        new SkillCard(
+                            jsonObj["CardName"].ToString(),
+                            skillCnt++,
+                            int.Parse(jsonObj["Amount"].ToString()),
+                            byte.Parse(jsonObj["Rotation"].ToString()),
+                            jsonObj["Range"].
+                                ToString().
+                                Split(' ').
+                                Select(x => int.Parse(x)).
+                                ToArray()));
                     break;
             }
         }

@@ -24,18 +24,22 @@ public class CardSet : MonoBehaviour
 
     public void AddCard(CardType type, byte code)
     {
+        Card card = null;
+        
         switch (type)
         {
             case CardType.Attack:
-                AttackCard card = new AttackCard(JsonParser.AttackCards[code]);
+                card = JsonParser.AttackCards[code];
                 break;
             case CardType.Shield:
+                card = JsonParser.ShieldCards[code];
                 break;
             case CardType.Skill:
+                card = JsonParser.SkillCards[code];
                 break;
         }
 
-        //_cards.Add();
+        _cards.Add(card);
     }
 
     public void ResetCardSet()

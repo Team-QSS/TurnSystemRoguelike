@@ -1,15 +1,9 @@
 ﻿public sealed class AttackCard : Card
 {
     public int Damage { get; private set; }
-    public int[,] Range { get; private set; }
-
-    public AttackCard(AttackCard card) : base(card.CardName, card.Type, card.CardData)
-    {
-        Damage = card.Damage;
-        Range = card.Range;
-    }
-
-    public AttackCard(string cardName, byte cardData, int damage, int[,] range) : base(cardName, CardType.Attack, cardData)
+    public int[] Range { get; private set; }
+    
+    public AttackCard(string cardName, byte cardData, int damage, int[] range) : base(cardName, CardType.Attack, cardData)
     {
         Damage = damage;
         Range = range;
