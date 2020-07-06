@@ -11,14 +11,22 @@
             <e p="AttackCard.cs" t="Include" />
             <e p="Card.cs" t="Include" />
             <e p="CardData.cs" t="Include" />
+            <e p="CardSet.cs" t="Include" />
             <e p="Rotation.cs" t="Include" />
             <e p="ShieldCard.cs" t="Include" />
             <e p="SkillCard.cs" t="Include" />
+          </e>
+          <e p="Entity" t="Include">
+            <e p="Entity.cs" t="Include" />
+          </e>
+          <e p="JsonParser" t="Include">
+            <e p="JsonParser.cs" t="Include" />
           </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
+      <e p="packages.config" t="Include" />
       <e p="Temp\bin" t="ExcludeRecursive" />
       <e p="TurnSystemRoguelike.sln" t="IncludeFlat" />
     </e>

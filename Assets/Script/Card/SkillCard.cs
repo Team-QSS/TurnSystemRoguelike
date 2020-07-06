@@ -1,16 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class SkillCard : Card
+﻿public sealed class SkillCard : Card
 {
     public int Amount { get; private set; }
     public int[,] Range { get; private set; }
 
-    public SkillCard(byte cardData, int amount, int[,] range)
+    public SkillCard(byte cardData, int amount, int[,] range) : base(CardType.Skill, cardData)
     {
-        CardData = cardData;
         Amount = amount;
         Range = range;
+    }
+
+    public override void Active()
+    {
+        base.Active();
     }
 }

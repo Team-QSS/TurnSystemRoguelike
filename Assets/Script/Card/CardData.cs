@@ -1,4 +1,4 @@
-﻿public enum CardDataType : byte
+﻿public enum CardType : byte
 {
     Attack = 0,
     Shield = 1,
