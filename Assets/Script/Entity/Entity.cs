@@ -6,7 +6,7 @@ public class Entity
 {
     [HideInInspector] public int Hp { get; protected set; }
     [HideInInspector] public Collider2D Col { get; protected set; }
-    [HideInInspector] public int[] pos { get; private set; } = new int[2];
+    [HideInInspector] public int[] Pos { get; private set; } = new int[2];
     
     public virtual void Move(int x, int y)
     {

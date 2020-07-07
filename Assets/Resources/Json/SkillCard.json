@@ -3,7 +3,7 @@
         "CardName": "Test",
         "Effect": null,
         "Sound": null,
-        "Animator": null,
+        "Animation": null,
         "Rotation": 170,
         "Range": "3 3",
         "Amount": 10
@@ -12,7 +12,7 @@
         "CardName": "Heal",
         "Effect": null,
         "Sound": null,
-        "Animator": null,
+        "Animation": null,
         "Rotation": 0,
         "Range": "0 0",
         "Amount": 10

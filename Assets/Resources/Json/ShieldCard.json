@@ -3,7 +3,7 @@
         "CardName": "Test",
         "Effect": null,
         "Sound": null,
-        "Animator": null,
+        "Animation": null,
         "Rotation": 255,
         "ShieldDamage": 10
     }

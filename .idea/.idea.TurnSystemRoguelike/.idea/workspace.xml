@@ -2,36 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6135b2f7-049d-4aa2-b0cc-c225cf05e111" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Json/AttackCard.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Json/AttackCard.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Json/ShieldCard.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Json/ShieldCard.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Json/SkillCard.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Json/SkillCard.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Card/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/Card.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/CardData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/CardData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Entity/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entity/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/Newtonsoft.Json.12.0.3.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net20/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net20/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net35/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net35/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net40/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net40/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net45/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net45/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard1.0/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard1.0/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard1.3/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard1.3/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard2.0/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard2.0/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/packageIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,15 +38,15 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Script/CardData.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/CardData.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entity/Entity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/CardData.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/Card.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entity/Entity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" />
       </list>
     </option>
   </component>
@@ -113,7 +94,7 @@
       <workItem from="1593993631985" duration="10580000" />
       <workItem from="1594019214895" duration="3122000" />
       <workItem from="1594030728278" duration="7168000" />
-      <workItem from="1594080400646" duration="2234000" />
+      <workItem from="1594080400646" duration="7237000" />
     </task>
     <servers />
   </component>
