@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
@@ -11,7 +9,7 @@ public static class JsonParser
     public static List<AttackCard> AttackCards { get; private set; } = new List<AttackCard>();
     public static List<ShieldCard> ShieldCards { get; private set; } = new List<ShieldCard>();
     public static List<SkillCard> SkillCards { get; private set; } = new List<SkillCard>();
-    
+
     private static string GetCardTypeString(CardType type)
     {
         switch (type)
@@ -41,18 +39,45 @@ public static class JsonParser
                     AttackCards.Add(
                         new AttackCard(
                             jsonObj["CardName"].ToString(), 
+                            Resources.Load<Animation>(
+                                string.Format(
+                                    @"Animation\{0}.anim", 
+                                    jsonObj["CardName"])),
+                            Resources.Load<AudioClip>(
+                                string.Format(
+                                    @"Sound\{0}",
+                                    jsonObj["Sound"])),
+                            Resources.Load<Animation>(
+                                string.Format(
+                                    @"PlayerAnimation\{0}",
+                                    jsonObj["Animation"])),
+                            jsonObj["Description"].ToString(),
                             attackCnt++, 
                             int.Parse(jsonObj["Damage"].ToString()), 
                             jsonObj["Range"].
                                 ToString().
                                 Split(' ').
                                 Select(x => int.Parse(x)).
-                                ToArray()));
+                                ToArray()
+                            ));
                     break;
                 case CardType.Shield:
                     ShieldCards.Add(
                         new ShieldCard(
-                            jsonObj["CardName"].ToString(), 
+                            jsonObj["CardName"].ToString(),
+                            Resources.Load<Animation>(
+                                string.Format(
+                                    @"Animation\{0}.anim", 
+                                    jsonObj["CardName"])),
+                            Resources.Load<AudioClip>(
+                                string.Format(
+                                    @"Sound\{0}",
+                                    jsonObj["Sound"])),
+                            Resources.Load<Animation>(
+                                string.Format(
+                                    @"PlayerAnimation\{0}",
+                                    jsonObj["Animation"])),
+                            jsonObj["Description"].ToString(),
                             shieldCnt++,
                             int.Parse(jsonObj["ShieldDamage"].ToString()),
                             byte.Parse(jsonObj["Rotation"].ToString())));
@@ -61,6 +86,19 @@ public static class JsonParser
                     SkillCards.Add(
                         new SkillCard(
                             jsonObj["CardName"].ToString(),
+                            Resources.Load<Animation>(
+                                string.Format(
+                                    @"Animation\{0}.anim", 
+                                    jsonObj["CardName"])),
+                            Resources.Load<AudioClip>(
+                                string.Format(
+                                    @"Sound\{0}",
+                                    jsonObj["Sound"])),
+                            Resources.Load<Animation>(
+                                string.Format(
+                                    @"PlayerAnimation\{0}",
+                                    jsonObj["Animation"])),
+                            jsonObj["Description"].ToString(),
                             skillCnt++,
                             int.Parse(jsonObj["Amount"].ToString()),
                             byte.Parse(jsonObj["Rotation"].ToString()),

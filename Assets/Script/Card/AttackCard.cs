@@ -1,9 +1,13 @@
-﻿public sealed class AttackCard : Card
+﻿using UnityEngine;
+
+public sealed class AttackCard : Card
 {
     public int Damage { get; private set; }
     public int[] Range { get; private set; }
     
-    public AttackCard(string cardName, byte cardData, int damage, int[] range) : base(cardName, CardType.Attack, cardData)
+    public AttackCard(string cardName, Animation effect, AudioClip sound, Animation playerAni, 
+        string description, byte cardData, int damage, int[] range) : 
+        base(cardName, effect, sound, playerAni, description, CardType.Attack, cardData)
     {
         Damage = damage;
         Range = range;
@@ -11,10 +15,8 @@
 
     public override void Active()
     {
-        Effect.Play();
-        PlayerAni.Play();
-        // PlayerManager.Col. x / y = range * shell size;
-        // Enter collider => attack
+        base.Active();
+        // TODO cal position
     }
     
 }

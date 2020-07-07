@@ -3,8 +3,9 @@
         "CardName": "Test",
         "Effect": null,
         "Sound": null,
-        "Animator": null,
+        "Animation": null,
         "Range": "3 2",
-        "Damage": 10
+        "Damage": 10,
+        "Description": "테스트"
     }
 ]

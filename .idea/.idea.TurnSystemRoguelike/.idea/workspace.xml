@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6135b2f7-049d-4aa2-b0cc-c225cf05e111" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Json/AttackCard.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Json/AttackCard.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Json/SkillCard.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Json/SkillCard.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/Card.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" afterDir="false" />
@@ -33,15 +37,15 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Script/CardData.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/CardData.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entity/Entity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/CardData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/Card.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" />
       </list>
     </option>
   </component>
@@ -88,7 +92,8 @@
       <workItem from="1593956809122" duration="1195000" />
       <workItem from="1593993631985" duration="10580000" />
       <workItem from="1594019214895" duration="3122000" />
-      <workItem from="1594030728278" duration="6357000" />
+      <workItem from="1594030728278" duration="7168000" />
+      <workItem from="1594080400646" duration="16448000" />
     </task>
     <servers />
   </component>

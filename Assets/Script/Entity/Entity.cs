@@ -1,13 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
 public class Entity
 {
-    public int Hp { get; protected set; }
-    public Collider2D Col { get; protected set; }
-
+    [HideInInspector] public int Hp { get; protected set; }
+    [HideInInspector] public Collider2D Col { get; protected set; }
+    [HideInInspector] public int[] Pos { get; private set; } = new int[2];
+    
     public virtual void Move(int x, int y)
     {
         // move entity +x +y
