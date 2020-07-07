@@ -6,7 +6,8 @@
         "Animation": null,
         "Rotation": 170,
         "Range": "3 3",
-        "Amount": 10
+        "Amount": 10,
+        "Description": "테스트"
     },
     {
         "CardName": "Heal",
@@ -15,6 +16,7 @@
         "Animation": null,
         "Rotation": 0,
         "Range": "0 0",
-        "Amount": 10
+        "Amount": 10,
+        "Description": "플레이어의 체력을 '10' 회복한다."
     }
 ]

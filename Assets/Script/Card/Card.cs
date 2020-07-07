@@ -6,15 +6,18 @@ public class Card
     protected Animation Effect;
     protected AudioClip Sound;
     protected Animation PlayerAni;
+    protected string Description;
     public CardType Type { get; protected set; }
     public byte CardData { get; protected set; } // card code
 
-    protected Card(string cardName, Animation effect, AudioClip sound, Animation playerAni, CardType type, byte cardData)
+    protected Card(string cardName, Animation effect, AudioClip sound, Animation playerAni, 
+        string description, CardType type, byte cardData)
     {
         CardName = cardName;
         Effect = effect;
         Sound = sound;
         PlayerAni = playerAni;
+        Description = description;
         Type = type;
         CardData = cardData;
     }

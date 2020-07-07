@@ -51,13 +51,15 @@ public static class JsonParser
                                 string.Format(
                                     @"PlayerAnimation\{0}",
                                     jsonObj["Animation"])),
+                            jsonObj["Description"].ToString(),
                             attackCnt++, 
                             int.Parse(jsonObj["Damage"].ToString()), 
                             jsonObj["Range"].
                                 ToString().
                                 Split(' ').
                                 Select(x => int.Parse(x)).
-                                ToArray()));
+                                ToArray()
+                            ));
                     break;
                 case CardType.Shield:
                     ShieldCards.Add(
@@ -75,6 +77,7 @@ public static class JsonParser
                                 string.Format(
                                     @"PlayerAnimation\{0}",
                                     jsonObj["Animation"])),
+                            jsonObj["Description"].ToString(),
                             shieldCnt++,
                             int.Parse(jsonObj["ShieldDamage"].ToString()),
                             byte.Parse(jsonObj["Rotation"].ToString())));
@@ -95,6 +98,7 @@ public static class JsonParser
                                 string.Format(
                                     @"PlayerAnimation\{0}",
                                     jsonObj["Animation"])),
+                            jsonObj["Description"].ToString(),
                             skillCnt++,
                             int.Parse(jsonObj["Amount"].ToString()),
                             byte.Parse(jsonObj["Rotation"].ToString()),
