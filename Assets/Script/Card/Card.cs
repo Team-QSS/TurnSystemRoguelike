@@ -19,6 +19,7 @@ public class Card
 
     public virtual void Active()
     {
-        // don't move
+        Effect.Play();
+        PlayerAni.Play();
     }
 }

@@ -11,10 +11,8 @@
 
     public override void Active()
     {
-        Effect.Play();
-        PlayerAni.Play();
-        // PlayerManager.Col. x / y = range * shell size;
-        // Enter collider => attack
+        base.Active();
+        // TODO cal position
     }
     
 }

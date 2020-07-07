@@ -14,5 +14,6 @@
     public override void Active()
     {
         base.Active();
+        // heal or damage
     }
 }

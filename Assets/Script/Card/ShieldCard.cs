@@ -12,6 +12,7 @@
     public override void Active()
     {
         base.Active();
+        // TODO shield to rotation
     }
     
 }
