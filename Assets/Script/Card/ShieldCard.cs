@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public sealed class ShieldCard : Card
 {
@@ -6,8 +7,8 @@ public sealed class ShieldCard : Card
     public byte Rotation { get; private set; } // 1 2 4 8 16 ... pip-line 이용
 
     public ShieldCard(string cardName, Animation effect, AudioClip sound, Animation playerAni, 
-        string description, byte cardData, int shieldDamage, byte rotation) : 
-        base(cardName, effect, sound, playerAni, description, CardType.Shield, cardData)
+        string description, Image cardImage,byte cardData, int shieldDamage, byte rotation) : 
+        base(cardName, effect, sound, playerAni, description, cardImage, CardType.Shield, cardData)
     {
         ShieldDamage = shieldDamage;
         Rotation = rotation;

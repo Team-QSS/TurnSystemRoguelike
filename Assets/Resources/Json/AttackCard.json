@@ -6,6 +6,7 @@
         "Animation": null,
         "Range": "3 2",
         "Damage": 10,
-        "Description": "테스트"
+        "Description": "테스트",
+        "Image": null
     }
 ]

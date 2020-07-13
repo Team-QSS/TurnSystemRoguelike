@@ -10,7 +10,8 @@ public static class CardSet
     private static Queue<Card> _cardSet = new Queue<Card>();
     private static List<Card> _hands = new List<Card>();
     public const int MaxHandsCount = 6;
-    private static Dictionary<byte, int> codeToIdx = new Dictionary<byte, int>
+    
+    private static readonly Dictionary<byte, int> CodeToIdx = new Dictionary<byte, int>
     {
         {(byte)(Rotation.Up | Rotation.Right), 0},    // {3, 0}
         {(byte)(Rotation.Up | Rotation.Down), 1},     // {5, 1}
@@ -70,10 +71,10 @@ public static class CardSet
             return false;
         }
         
-        if (codeToIdx.ContainsKey(rotation))
+        if (CodeToIdx.ContainsKey(rotation))
         {
-            _hands[codeToIdx[rotation]].Active();
-            _hands.RemoveAt(codeToIdx[rotation]);
+            _hands[CodeToIdx[rotation]].Active();
+            _hands.RemoveAt(CodeToIdx[rotation]);
             return true;
         }
         else
