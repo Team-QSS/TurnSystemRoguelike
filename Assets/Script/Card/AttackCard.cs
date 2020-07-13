@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public sealed class AttackCard : Card
 {
@@ -6,8 +7,8 @@ public sealed class AttackCard : Card
     public int[] Range { get; private set; }
     
     public AttackCard(string cardName, Animation effect, AudioClip sound, Animation playerAni, 
-        string description, byte cardData, int damage, int[] range) : 
-        base(cardName, effect, sound, playerAni, description, CardType.Attack, cardData)
+        string description, Image cardImage, byte cardData, int damage, int[] range) : 
+        base(cardName, effect, sound, playerAni, description, cardImage, CardType.Attack, cardData)
     {
         Damage = damage;
         Range = range;
