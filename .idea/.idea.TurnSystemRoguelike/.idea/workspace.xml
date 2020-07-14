@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6135b2f7-049d-4aa2-b0cc-c225cf05e111" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Lib/Singleton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Json/SkillCard.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Json/SkillCard.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Entity/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entity/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,8 +46,8 @@
         <option value="$PROJECT_DIR$/Assets/Script/Lib/Singleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Lib/MonoSingleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entity/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameSystem/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" />
       </list>
     </option>
   </component>
@@ -107,7 +101,7 @@
       <workItem from="1594338470101" duration="8158000" />
       <workItem from="1594568956481" duration="5991000" />
       <workItem from="1594642642145" duration="5714000" />
-      <workItem from="1594708338419" duration="11124000" />
+      <workItem from="1594708338419" duration="11517000" />
     </task>
     <servers />
   </component>
