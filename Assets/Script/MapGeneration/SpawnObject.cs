@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class SpawnObject : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject[] tiles;
+    private int rand;
+    private void Awake()
     {
-        
+        rand = Random.Range(0, tiles.Length);
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        Instantiate(tiles[rand], transform.position, Quaternion.identity);
     }
 }
