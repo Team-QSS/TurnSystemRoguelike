@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public static class JsonParser
 {
-    public static List<AttackCard> AttackCards { get; private set; } = new List<AttackCard>();
-    public static List<ShieldCard> ShieldCards { get; private set; } = new List<ShieldCard>();
-    public static List<SkillCard> SkillCards { get; private set; } = new List<SkillCard>();
+    public static Dictionary<string, AttackCard> AttackCards { get; private set; } = new Dictionary<string, AttackCard>();
+    public static Dictionary<string, ShieldCard> ShieldCards { get; private set; } = new Dictionary<string, ShieldCard>();
+    public static Dictionary<string, SkillCard> SkillCards { get; private set; } = new Dictionary<string, SkillCard>();
 
     private static string GetCardTypeString(CardType type)
     {
@@ -37,6 +37,7 @@ public static class JsonParser
             {
                 case CardType.Attack:
                     AttackCards.Add(
+                        jsonObj["CardName"].ToString(),
                         new AttackCard(
                             jsonObj["CardName"].ToString(), 
                             Resources.Load<Animation>(
@@ -60,12 +61,13 @@ public static class JsonParser
                             jsonObj["Range"].
                                 ToString().
                                 Split(' ').
-                                Select(x => int.Parse(x)).
+                                Select(s => int.Parse(s)).
                                 ToArray()
                             ));
                     break;
                 case CardType.Shield:
                     ShieldCards.Add(
+                        jsonObj["CardName"].ToString(),
                         new ShieldCard(
                             jsonObj["CardName"].ToString(),
                             Resources.Load<Animation>(
@@ -91,11 +93,12 @@ public static class JsonParser
                     break;
                 case CardType.Skill:
                     SkillCards.Add(
+                        jsonObj["CardName"].ToString(),
                         new SkillCard(
                             jsonObj["CardName"].ToString(),
                             Resources.Load<Animation>(
                                 string.Format(
-                                    @"Animation\{0}", 
+                                    @"Animation\{0}",
                                     jsonObj["CardName"])),
                             Resources.Load<AudioClip>(
                                 string.Format(
@@ -108,16 +111,12 @@ public static class JsonParser
                             jsonObj["Description"].ToString(),
                             Resources.Load<Image>(
                                 string.Format(
-                                    @"CardImage\SkillCard\{0}", 
+                                    @"CardImage\SkillCard\{0}",
                                     jsonObj["Image"])),
                             skillCnt++,
                             int.Parse(jsonObj["Amount"].ToString()),
-                            byte.Parse(jsonObj["Rotation"].ToString()),
-                            jsonObj["Range"].
-                                ToString().
-                                Split(' ').
-                                Select(x => int.Parse(x)).
-                                ToArray()));
+                            jsonObj["Range"].ToString().Split(' ').
+                                Select(s => byte.Parse(s)).ToArray()));
                     break;
             }
         }

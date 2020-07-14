@@ -21,8 +21,14 @@
             <e p="Entity.cs" t="Include" />
             <e p="Player.cs" t="Include" />
           </e>
+          <e p="GameSystem" t="Include">
+            <e p="GameManager.cs" t="Include" />
+          </e>
           <e p="JsonParser" t="Include">
             <e p="JsonParser.cs" t="Include" />
+          </e>
+          <e p="Lib" t="Include">
+            <e p="Singleton.cs" t="Include" />
           </e>
         </e>
       </e>
