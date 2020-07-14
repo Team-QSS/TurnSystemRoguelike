@@ -1,44 +1,47 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CardSet : MonoBehaviour
+public static class CardSet
 {
-    private List<Card> _cards = new List<Card>();
-    private List<Card> _randCards = new List<Card>();
-    public Text CardCount;
-    private Queue<Card> _cardSet = new Queue<Card>();
-
-    // Start is called before the first frame update
-    void Start()
+    private static List<Card> _cards = new List<Card>();
+    private static List<Card> _randCards = new List<Card>();
+    public static Text CardCount;
+    private static Queue<Card> _cardSet = new Queue<Card>();
+    private static List<Card> _hands = new List<Card>();
+    public const int MaxHandsCount = 6;
+    
+    private static readonly Dictionary<byte, int> CodeToIdx = new Dictionary<byte, int>
     {
+        {(byte)(Rotation.Up | Rotation.Right), 0},    // {3, 0}
+        {(byte)(Rotation.Up | Rotation.Down), 1},     // {5, 1}
+        {(byte)(Rotation.Right | Rotation.Down), 2},  // {6, 2}
+        {(byte)(Rotation.Up | Rotation.Left), 3},     // {9, 3}
+        {(byte)(Rotation.Right | Rotation.Left), 4},  // [10, 4}
+        {(byte)(Rotation.Down | Rotation.Left), 5}    // [12, 5}
+    };
+
+    public static void AddCardSet(CardType type, byte code)
+    {
+        Card card = null;
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void AddCard(CardType type, byte code)
-    {
         switch (type)
         {
             case CardType.Attack:
-                AttackCard card = new AttackCard(JsonParser.AttackCards[code]);
+                card = JsonParser.AttackCards[code];
                 break;
             case CardType.Shield:
+                card = JsonParser.ShieldCards[code];
                 break;
             case CardType.Skill:
+                card = JsonParser.SkillCards[code];
                 break;
         }
 
-        //_cards.Add();
+        _cards.Add(card);
     }
 
-    public void ResetCardSet()
+    public static void ResetCardSet()
     {
         _cardSet.Clear();
         _randCards = _cards;
@@ -51,5 +54,32 @@ public class CardSet : MonoBehaviour
         }
 
         CardCount.text = _cardSet.Count.ToString();
+    }
+
+    public static void PullCard()
+    {
+        if (_hands.Count < MaxHandsCount)
+        {
+            _hands.Add(_cardSet.Dequeue());
+        }
+    }
+
+    public static bool UseCard(byte rotation)
+    {
+        if (_hands.Count == 0)
+        {
+            return false;
+        }
+        
+        if (CodeToIdx.ContainsKey(rotation))
+        {
+            _hands[CodeToIdx[rotation]].Active();
+            _hands.RemoveAt(CodeToIdx[rotation]);
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

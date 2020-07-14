@@ -17,5 +17,5 @@ public enum ShieldCardData : byte
 
 public enum SkillData : byte
 {
-    Hill = 0
+    Heal = 0
 }

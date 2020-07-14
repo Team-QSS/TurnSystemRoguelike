@@ -17,7 +17,9 @@
             <e p="SkillCard.cs" t="Include" />
           </e>
           <e p="Entity" t="Include">
+            <e p="Enemy.cs" t="Include" />
             <e p="Entity.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
           </e>
           <e p="JsonParser" t="Include">
             <e p="JsonParser.cs" t="Include" />
