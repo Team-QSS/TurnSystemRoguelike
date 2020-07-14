@@ -60,7 +60,7 @@ public static class JsonParser
                             jsonObj["Range"].
                                 ToString().
                                 Split(' ').
-                                Select(x => int.Parse(x)).
+                                Select(s => int.Parse(s)).
                                 ToArray()
                             ));
                     break;
@@ -95,7 +95,7 @@ public static class JsonParser
                             jsonObj["CardName"].ToString(),
                             Resources.Load<Animation>(
                                 string.Format(
-                                    @"Animation\{0}", 
+                                    @"Animation\{0}",
                                     jsonObj["CardName"])),
                             Resources.Load<AudioClip>(
                                 string.Format(
@@ -108,16 +108,12 @@ public static class JsonParser
                             jsonObj["Description"].ToString(),
                             Resources.Load<Image>(
                                 string.Format(
-                                    @"CardImage\SkillCard\{0}", 
+                                    @"CardImage\SkillCard\{0}",
                                     jsonObj["Image"])),
                             skillCnt++,
                             int.Parse(jsonObj["Amount"].ToString()),
-                            byte.Parse(jsonObj["Rotation"].ToString()),
-                            jsonObj["Range"].
-                                ToString().
-                                Split(' ').
-                                Select(x => int.Parse(x)).
-                                ToArray()));
+                            jsonObj["Range"].ToString().Split(' ').
+                                Select(s => byte.Parse(s)).ToArray()));
                     break;
             }
         }

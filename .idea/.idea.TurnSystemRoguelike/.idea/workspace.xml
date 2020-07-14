@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6135b2f7-049d-4aa2-b0cc-c225cf05e111" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Lib/Singleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Json/SkillCard.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Json/SkillCard.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Entity/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Entity/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,17 +20,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/GameSystem/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Lib/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/Entity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Card/CardData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Card/Card.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -31,16 +40,20 @@
         <option value="$PROJECT_DIR$/Assets/Script/CardData.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/CardData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/Card.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entity/Entity.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entity/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Singleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Lib/Singleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Lib/MonoSingleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entity/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameSystem/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -94,11 +107,23 @@
       <workItem from="1594338470101" duration="8158000" />
       <workItem from="1594568956481" duration="5991000" />
       <workItem from="1594642642145" duration="5714000" />
+      <workItem from="1594708338419" duration="11124000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="461" y="182" key="SettingsEditor" timestamp="1594030578414">
@@ -109,5 +134,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="786" y="244" key="VCS.ChangeListViewerDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1593997309535" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1594721561462">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594721561462" />
   </component>
 </project>
