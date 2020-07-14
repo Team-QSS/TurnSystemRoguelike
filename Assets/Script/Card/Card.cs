@@ -3,33 +3,42 @@ using UnityEngine.UI;
 
 public class Card
 {
-    protected string CardName;
-    protected Animation Effect;
-    protected AudioClip Sound;
-    protected Animation PlayerAni;
-    protected string Description;
-    protected Image CardImage; 
+    public class CardFXData
+    {
+        public Animation effect;
+        public Animation playerAnimation;
+        public AudioClip audioClip;
+        public Sprite cardSprite;
         
+        public CardFXData(Animation effect, Animation playerAnimation, AudioClip audioClip, Sprite cardSprite)
+        {
+            this.effect = effect;
+            this.playerAnimation = playerAnimation;
+            this.audioClip = audioClip;
+            this.cardSprite = cardSprite;
+        }
+    }
+
+    protected string cardName;
+    protected string description;
+    protected CardFXData cardFXData;
+
     public CardType Type { get; protected set; }
     public byte CardData { get; protected set; } // card code
 
-    protected Card(string cardName, Animation effect, AudioClip sound, Animation playerAni, 
-        string description, Image cardImage, CardType type, byte cardData)
+    protected Card(string cardName, string description, CardType type, byte cardData, CardFXData fxData)
     {
-        CardName = cardName;
-        Effect = effect;
-        Sound = sound;
-        PlayerAni = playerAni;
-        Description = description;
-        CardImage = cardImage;
+        this.cardName = cardName;
+        this.description = description;
+        cardFXData = fxData;
         Type = type;
         CardData = cardData;
     }
 
     public virtual void Active()
     {
-        Effect.Play();
-        PlayerAni.Play();
+        cardFXData.effect.Play();
+        cardFXData.playerAnimation.Play();
         // TODO Sound PlayOneShot
     }
 }

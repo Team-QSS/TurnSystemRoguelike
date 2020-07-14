@@ -28,8 +28,7 @@ public class GameManager : Singleton<GameManager>
         };
         foreach (Enemy enemy in Enemies)
         {
-            enemy._transform.X;
-            enemy._transform.Y;
+
         }
         
         return null;

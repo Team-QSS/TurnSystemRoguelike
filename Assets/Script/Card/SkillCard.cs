@@ -6,9 +6,9 @@ public sealed class SkillCard : Card
     public int Amount { get; private set; }
     public byte[] Range { get; private set; }
 
-    public SkillCard(string cardName, Animation effect, AudioClip sound, Animation playerAni,
-        string description, Image cardImage, byte cardData, int amount, byte[] range) : 
-        base(cardName, effect, sound, playerAni, description, cardImage, CardType.Skill, cardData)
+    public SkillCard(string cardName, string description, byte cardData,
+        CardFXData fxData, int amount, byte[] range) : 
+        base(cardName, description, CardType.Skill, cardData, fxData)
     {
         Amount = amount;
         Range = range;
