@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6135b2f7-049d-4aa2-b0cc-c225cf05e111" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Card/Card.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entity/Entity.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entity/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" />
@@ -48,6 +47,7 @@
         <option value="$PROJECT_DIR$/Assets/Script/Entity/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameSystem/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" />
       </list>
     </option>
   </component>
@@ -101,7 +101,7 @@
       <workItem from="1594338470101" duration="8158000" />
       <workItem from="1594568956481" duration="5991000" />
       <workItem from="1594642642145" duration="5714000" />
-      <workItem from="1594708338419" duration="11517000" />
+      <workItem from="1594708338419" duration="11744000" />
     </task>
     <servers />
   </component>
