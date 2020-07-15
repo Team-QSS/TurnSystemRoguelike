@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6135b2f7-049d-4aa2-b0cc-c225cf05e111" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PortraitSprite.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sound.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/Card.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/CardData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/CardData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/JsonParser.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Util/ResourceExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Util/ResourceExtension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugin.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugin/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugin/Newtonsoft.Json.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/csv/AttackCard.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/csv/AttackCard.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +109,7 @@
       <workItem from="1594642642145" duration="5714000" />
       <workItem from="1594708338419" duration="12584000" />
       <workItem from="1594729878237" duration="663000" />
-      <workItem from="1594733805196" duration="5944000" />
+      <workItem from="1594733805196" duration="6546000" />
     </task>
     <servers />
   </component>
