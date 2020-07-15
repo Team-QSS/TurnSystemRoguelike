@@ -6,8 +6,8 @@ public static class ResourceExtension
 {
     private const string EffectPathFormat = @"Effect\{0}";
     private const string PlayerAnimationPathFormat = @"PlayerAnimation\{0}";
-    private const string AudioClipPathFormat = @"Sound\{0}";
-    private const string CardSpritePathFormat = @"PortraitSprite\{0}";
+    private const string AudioClipPathFormat = @"AudioClip\{0}";
+    private const string CardSpritePathFormat = @"CardSprite\{0}";
 
     public static Card.CardFXData LoadCardFXData(string fileName)
     {

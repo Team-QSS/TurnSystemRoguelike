@@ -3,14 +3,14 @@ using UnityEngine.UI;
 
 public sealed class ShieldCard : Card
 {
-    public int ShieldDamage { get; private set; }
     public byte Rotation { get; private set; } // 1 2 4 8 16 ... pip-line 이용
 
-    public ShieldCard(string cardName, string description, byte cardData,
-        CardFXData fxData, int shieldDamage, byte rotation) : 
-        base(cardName, description, CardType.Shield, cardData, fxData)
+    //card_id,card_name,rotation,amount,description
+    public ShieldCard(int cardId, string cardName, byte rotation, 
+        int amount, string description, CardFXData fxData) : 
+        base(cardId, cardName, description, CardType.Shield, fxData)
     {
-        ShieldDamage = shieldDamage;
+        Amount = amount;
         Rotation = rotation;
     }
     

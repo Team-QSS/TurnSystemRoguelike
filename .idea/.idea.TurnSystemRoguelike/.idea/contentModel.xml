@@ -24,12 +24,15 @@
           <e p="GameSystem" t="Include">
             <e p="GameManager.cs" t="Include" />
           </e>
-          <e p="JsonParser" t="Include">
-            <e p="JsonParser.cs" t="Include" />
-          </e>
           <e p="Lib" t="Include">
             <e p="Singleton.cs" t="Include" />
           </e>
+          <e p="Parser" t="Include">
+            <e p="CardDataParser.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Util" t="Include">
+          <e p="ResourceExtension.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

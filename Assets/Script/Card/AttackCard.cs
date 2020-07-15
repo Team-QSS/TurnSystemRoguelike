@@ -3,14 +3,14 @@ using UnityEngine.UI;
 
 public sealed class AttackCard : Card
 {
-    public int Damage { get; private set; }
     public (int x, int y) Range { get; private set; }
     
-    public AttackCard(string cardName, string description, byte cardData,
-        CardFXData fxData, int damage, (int x, int y) range) : 
-        base(cardName, description, CardType.Attack, cardData, fxData)
+    //card_id,card_name,range_x,range_y,amount,description
+    public AttackCard(int cardId, string cardName, (int x, int y) range, 
+        int amount, string description, CardFXData fxData) : 
+        base(cardId, cardName, description, CardType.Attack, fxData)
     {
-        Damage = damage;
+        Amount = amount;
         Range = range;
     }
 

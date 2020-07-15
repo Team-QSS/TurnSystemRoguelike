@@ -3,12 +3,12 @@ using UnityEngine.UI;
 
 public sealed class SkillCard : Card
 {
-    public int Amount { get; private set; }
     public byte[] Range { get; private set; }
 
-    public SkillCard(string cardName, string description, byte cardData,
-        CardFXData fxData, int amount, byte[] range) : 
-        base(cardName, description, CardType.Skill, cardData, fxData)
+    // card_id,card_name,range,amount,description
+    public SkillCard(int cardId, string cardName, byte[] range, 
+        int amount, string description, CardFXData fxData) : 
+        base(cardId, cardName, description, CardType.Skill, fxData)
     {
         Amount = amount;
         Range = range;

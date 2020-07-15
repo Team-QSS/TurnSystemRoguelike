@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6135b2f7-049d-4aa2-b0cc-c225cf05e111" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PortraitSprite.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sound.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/Card.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/CardData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/CardData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/JsonParser.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Util/ResourceExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Util/ResourceExtension.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +28,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Parser/CardDataParser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" root0="FORCE_HIGHLIGHTING" />
@@ -23,7 +37,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Lib/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/Entity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Util/ResourceExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Card/CardData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Card/Card.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" root0="FORCE_HIGHLIGHTING" />
@@ -33,21 +47,24 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Script/CardData.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/CardData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/Card.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entity/Entity.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entity/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Singleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Lib/Singleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Lib/MonoSingleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entity/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameSystem/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Util/ResourceExtension.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/CardData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Parser/JsonParser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/Card.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Parser/CardDataParser.cs" />
       </list>
     </option>
   </component>
@@ -103,6 +120,7 @@
       <workItem from="1594642642145" duration="5714000" />
       <workItem from="1594708338419" duration="12584000" />
       <workItem from="1594729878237" duration="663000" />
+      <workItem from="1594733805196" duration="5944000" />
     </task>
     <servers />
   </component>
@@ -131,9 +149,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="786" y="244" key="VCS.ChangeListViewerDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1593997309535" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1594721561462">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1594777792551">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594721561462" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594777792551" />
   </component>
 </project>

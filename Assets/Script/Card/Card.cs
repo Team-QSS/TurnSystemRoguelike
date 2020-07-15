@@ -23,16 +23,17 @@ public class Card
     protected string description;
     protected CardFXData cardFXData;
 
+    public int Amount { get; protected set; }
     public CardType Type { get; protected set; }
-    public byte CardData { get; protected set; } // card code
+    public int CardId { get; protected set; } // card code
 
-    protected Card(string cardName, string description, CardType type, byte cardData, CardFXData fxData)
+    protected Card(int cardId, string cardName, string description, CardType type, CardFXData fxData)
     {
         this.cardName = cardName;
         this.description = description;
         cardFXData = fxData;
         Type = type;
-        CardData = cardData;
+        CardId = cardId;
     }
 
     public virtual void Active()
