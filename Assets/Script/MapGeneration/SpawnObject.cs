@@ -13,5 +13,6 @@ public class SpawnObject : MonoBehaviour
     private void Start()
     {
         Instantiate(tiles[rand], transform.position, Quaternion.identity);
+        Destroy(this.gameObject);
     }
 }
