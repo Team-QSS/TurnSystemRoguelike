@@ -17,18 +17,29 @@ public class GameManager : Singleton<GameManager>
         // TODO 맵 생성 함수 호출과 몬스터 받아오고 상자배치
     }
 
-    public int[] GetIsWithinAttackRanges(byte rotation, int[] range)
+    private bool GetIsWithInAttackRange(Rotation rotation, Entity.EntityTransform player, Entity.EntityTransform enemy, (int, int) range)
     {
-        bool[] rotationFlag =
+        /*
+        * up (p.x - range.x / 2 <= enemy.x <= p.x + range.x / 2) && (p.y < enemy.y <= p.y - range.y)
+        * right (p.x < enemy.x <= p.x + range.y) && (p.y - range.x / 2 <= enemy.y <= p.y + range.x / 2)
+        * down (p.x - range.x / 2 <= enemy.x <= p.x + range.x / 2) && (p.y > enemy.y >= p.y + range.y)
+        * left (p.x > enemy.x >= p.x - range.y) && (p.y - range.x / 2 <= enemy.y <= p.y + range.x / 2)
+        */
+        switch (rotation)
         {
-            (rotation & (byte)Rotation.Up) > 0, 
-            (rotation & (byte)Rotation.Right) > 0,
-            (rotation & (byte)Rotation.Down) > 0,
-            (rotation & (byte)Rotation.Left) > 0
-        };
+            case Rotation.Up: return (player.x - range.Item1 / 2 <= enemy.x && enemy.x <= player.x + range.Item1 / 2) && (player.y < enemy.y && enemy.y <= player.y - range.Item2);
+            case Rotation.Right: return (player.x < enemy.x && enemy.x <= player.x + range.Item2) && (player.y - range.Item1 / 2 <= enemy.y && enemy.y <= player.y + range.Item1 / 2);
+            case Rotation.Down: return (player.x - range.Item1 / 2 <= enemy.x && enemy.x <= player.x + range.Item1 / 2) && (player.y > enemy.y && enemy.y >= player.y + range.Item2);
+            case Rotation.Left: return (player.x > enemy.x && enemy.x >= player.x - range.Item2) && (player.y - range.Item1 / 2 <= enemy.y && enemy.y <= player.y + range.Item1 / 2);;
+            default: return false;
+        }
+    }
+    
+    public Enemy[] GetEnemiesWithinAttackRanges(byte rotation, (int,int) range)
+    {
         foreach (Enemy enemy in Enemies)
         {
-
+            
         }
         
         return null;

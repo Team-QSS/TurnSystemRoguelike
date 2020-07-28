@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -7,12 +6,26 @@ using UnityEngine.UI;
 
 public static class CardDataParser
 {
-    public static Dictionary<int, AttackCard> AttackCards { get; private set; } = new Dictionary<int, AttackCard>();
-    public static Dictionary<int, ShieldCard> ShieldCards { get; private set; } = new Dictionary<int, ShieldCard>();
-    public static Dictionary<int, SkillCard> SkillCards { get; private set; } = new Dictionary<int, SkillCard>();
+    private static Dictionary<int, AttackCard> _attackCards = new Dictionary<int, AttackCard>();
+    private static Dictionary<int, ShieldCard> _shieldCards = new Dictionary<int, ShieldCard>();
+    private static Dictionary<int, SkillCard> _skillCards = new Dictionary<int, SkillCard>();
 
     private const string CSVPath = @"csv\";
-
+    
+    public static Card GetCard(KeyValuePair<CardType, int> cardData)
+    {
+        switch (cardData.Key.ToString())
+        { 
+            case "AttackCard": return _attackCards[cardData.Value];
+            case "ShieldCard": return _shieldCards[cardData.Value];
+            case "SkillCard": return _skillCards[cardData.Value];
+            
+            default: 
+                Debug.LogError("CardType");
+                throw new ArgumentException();
+        }
+    }
+    
     public static void ParseCardData()
     {
         foreach (var typeName in typeof(CardType).GetEnumNames())
@@ -23,16 +36,16 @@ public static class CardDataParser
             
             foreach (var data in datas)
             {
-                if (data[0] == "card_id")
+                if (data[0].Equals("card_id"))
                 {
                     continue;
                 }
 
                 Card.CardFXData fxData = ResourceExtension.LoadCardFXData(fileName:data[1]);
                 
-                if (typeName == "Attack")
+                if (typeName.Equals("Attack"))
                 {
-                    AttackCards.Add(
+                    _attackCards.Add(
                         int.Parse(data[0]), 
                         new AttackCard(
                             cardId: int.Parse(data[0]),
@@ -43,10 +56,10 @@ public static class CardDataParser
                             fxData: fxData
                             ));    
                 }
-                else if (typeName == "Shield")
+                else if (typeName.Equals("Shield"))
                 {
                     
-                    ShieldCards.Add(
+                    _shieldCards.Add(
                         int.Parse(data[0]),
                         new ShieldCard(
                             cardId: int.Parse(data[0]),
@@ -57,12 +70,12 @@ public static class CardDataParser
                             fxData: fxData
                             ));
                 }
-                else if (typeName == "Skill")
+                else if (typeName.Equals("Skill"))
                 {
                     byte[] range = data[3].Split(' ').
                         Select(x => byte.Parse(x)).ToArray();
                         
-                    SkillCards.Add(
+                    _skillCards.Add(
                         int.Parse(data[0]),
                         new SkillCard(
                             cardId: int.Parse(data[0]),
@@ -76,5 +89,4 @@ public static class CardDataParser
             }
         }
     }
-    
 }

@@ -10,11 +10,18 @@ public sealed class Player : Entity
     {
         get
         {
-            _instance = GameObject.FindWithTag("Player").GetComponent<Player>();
-            
             if (_instance == null)
             {
-                Debug.LogError("has not Player");
+                var player = GameObject.FindWithTag("Player");
+                
+                if (player == null)
+                {
+                    Debug.LogError("this scene hasn't player");
+                }
+                else
+                {
+                    _instance = player.GetComponent<Player>();
+                }
             }
             
             return _instance;
@@ -29,7 +36,7 @@ public sealed class Player : Entity
         if (!CardSet.UseCard(rotation))
         {
             base.Move(rotation, value);
-            // TODO pull card
+            CardSet.PullCard();
         }
     }
 }

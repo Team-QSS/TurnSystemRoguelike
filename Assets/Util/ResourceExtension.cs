@@ -9,6 +9,8 @@ public static class ResourceExtension
     private const string AudioClipPathFormat = @"AudioClip\{0}";
     private const string CardSpritePathFormat = @"CardSprite\{0}";
 
+    private const string HeartSpritePathFormat = @"HeartSprite\{0}";
+
     public static Card.CardFXData LoadCardFXData(string fileName)
     {
         var fxData = new Card.CardFXData(
@@ -41,6 +43,12 @@ public static class ResourceExtension
     private static Sprite LoadCardSprite(string fileName)
     {
         var path = string.Format(CardSpritePathFormat, fileName);
+        return Resources.Load<Sprite>(path);
+    }
+
+    public static Sprite LoadHeartSprite(string fileName)
+    {
+        var path = string.Format(HeartSpritePathFormat, fileName);
         return Resources.Load<Sprite>(path);
     }
 }

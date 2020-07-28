@@ -2,5 +2,6 @@
 {
     Attack = 0,
     Shield = 1,
-    Skill = 2
+    Skill = 2,
+    None = 3
 }
