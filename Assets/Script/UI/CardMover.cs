@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using BSLibrary;
 
-public class CardMover : Singleton<CardMover>
+public class CardMover : MonoSingleton<CardMover>
 {
     public List<Image> Cards;
     private int _cardCount;
     public Text CardSetCount;
-    
 
     public void PullCard(int index)
     {
@@ -26,6 +26,7 @@ public class CardMover : Singleton<CardMover>
     
     public void ResetCardSet()
     {
+        // TODO show card set reset effect
         CardSetCount.text = CardSet.GetCardSetCount().ToString();
     }
 }

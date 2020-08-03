@@ -1,4 +1,4 @@
-﻿public enum Rotation : byte
+﻿public enum Rotation : byte // use bit mask
 {
     None = 0,
     Up = 1, 

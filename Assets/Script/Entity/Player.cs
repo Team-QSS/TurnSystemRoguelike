@@ -5,6 +5,7 @@ using UnityEngine;
 public sealed class Player : Entity
 {
     private static Player _instance = null;
+    public int ShieldCardId;
 
     public static Player Instance
     {
@@ -21,6 +22,7 @@ public sealed class Player : Entity
                 else
                 {
                     _instance = player.GetComponent<Player>();
+                    MonoBehaviour.DontDestroyOnLoad(player);
                 }
             }
             

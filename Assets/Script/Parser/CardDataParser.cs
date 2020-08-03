@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public static class CardDataParser
 {
-    private static Dictionary<int, AttackCard> _attackCards = new Dictionary<int, AttackCard>();
-    private static Dictionary<int, ShieldCard> _shieldCards = new Dictionary<int, ShieldCard>();
-    private static Dictionary<int, SkillCard> _skillCards = new Dictionary<int, SkillCard>();
+    private static readonly Dictionary<int, AttackCard> _attackCards = new Dictionary<int, AttackCard>();
+    private static readonly Dictionary<int, ShieldCard> _shieldCards = new Dictionary<int, ShieldCard>();
+    private static readonly Dictionary<int, SkillCard> _skillCards = new Dictionary<int, SkillCard>();
 
     private const string CSVPath = @"csv\";
     

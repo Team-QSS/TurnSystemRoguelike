@@ -17,7 +17,7 @@ public class Entity
         }
     }
 
-    public int Hp { get; protected set; }
+    public int Hp;
     public EntityTransform _transform { get; protected set; }
 
     protected Entity(int hp, EntityTransform entityTransform)
