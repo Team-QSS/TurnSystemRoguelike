@@ -21,20 +21,20 @@ public static class CardSet
         {(byte)(Rotation.Down | Rotation.Left), 5}    // [12, 5}
     };
 
-    public static void AddCardSet(CardType type, byte code)
+    public static void AddCardSet(CardType type, int cardId)
     {
         Card card = null;
         
         switch (type)
         {
             case CardType.Attack:
-                card = JsonParser.AttackCards[code];
+                card = CardDataParser.AttackCards[cardId];
                 break;
             case CardType.Shield:
-                card = JsonParser.ShieldCards[code];
+                card = CardDataParser.ShieldCards[cardId];
                 break;
             case CardType.Skill:
-                card = JsonParser.SkillCards[code];
+                card = CardDataParser.SkillCards[cardId];
                 break;
         }
 

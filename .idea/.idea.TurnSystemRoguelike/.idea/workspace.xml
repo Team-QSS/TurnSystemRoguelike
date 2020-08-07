@@ -32,19 +32,26 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Script/CardData.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/CardData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/Card.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entity/Entity.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entity/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Singleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Lib/Singleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Lib/MonoSingleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entity/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/MapGeneration/SpawnObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/MapGeneration/LevelGeneration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameSystem/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Util/ResourceExtension.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/CardData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Parser/JsonParser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/Card.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Parser/CardDataParser.cs" />
       </list>
     </option>
   </component>
@@ -86,6 +93,10 @@
       <workItem from="1594568956481" duration="5991000" />
       <workItem from="1594642642145" duration="4914000" />
       <workItem from="1594721144970" duration="16899000" />
+      <workItem from="1594642642145" duration="5714000" />
+      <workItem from="1594708338419" duration="12584000" />
+      <workItem from="1594729878237" duration="663000" />
+      <workItem from="1594733805196" duration="5944000" />
     </task>
     <servers />
   </component>
@@ -94,6 +105,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595512494719">
