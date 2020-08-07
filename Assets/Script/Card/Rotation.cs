@@ -4,9 +4,9 @@
     Up = 1, 
     Right = 2, 
     Down = 4, 
-    Left = 8, 
-    UpRight = 16, 
-    UpLeft = 32, 
-    DownRight = 64, 
-    DownLeft = 128
+    Left = 8,
+    RightUp = 16,
+    RightDown = 32,
+    LeftUp = 64,
+    LeftDown = 128
 }

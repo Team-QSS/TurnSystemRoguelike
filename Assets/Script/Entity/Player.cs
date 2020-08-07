@@ -4,20 +4,22 @@ using UnityEngine;
 
 public sealed class Player : Entity
 {
-    private static Player instance = null;
+    private static Player _instance = null;
 
     public static Player Instance
     {
         get
         {
-            if (instance == null)
+            _instance = GameObject.FindWithTag("Player").GetComponent<Player>();
+            
+            if (_instance == null)
             {
-                instance = GameObject.FindWithTag("Player").GetComponent<Player>();
+                Debug.LogError("has not Player");
             }
-
-            return instance;
+            
+            return _instance;
         }
-        set { instance = value; }
+        private set { _instance = value; }
     }
     
     Player(int hp, EntityTransform entityTransform) : base(hp, entityTransform) {}
