@@ -18,6 +18,6 @@
 2. 개발 부분\
   2-1. 주보성: Card, Entity, Json Parsing\
   2-2. 김선민: Random Map Generation (~ing)\
-  2-3. 김기욱: Random Map Generation\
+  2-3. 김기욱: Random Map Generation  
 
 3. 출처
