@@ -7,7 +7,7 @@ using BSLibrary;
 
 public class GameManager : MonoSingleton<GameManager>
 {
-    public List<Enemy> Enemies { get; private set; }
+    public List<Enemy> Enemies { get; private set; } = new List<Enemy>();
 
     private void Awake()
     {
@@ -62,8 +62,8 @@ public class GameManager : MonoSingleton<GameManager>
             GetIsWithInAttackRangeAToB(
                 rotation: (Rotation)rotation, 
                 range: range, 
-                a: Player.Instance._transform, 
-                b: enemy._transform)).ToArray();
+                a: Player.Instance._Transform, 
+                b: enemy._Transform)).ToArray();
     }
 
      public Enemy[] GetEnemiesWithinSkillRanges(byte[] range)
@@ -73,7 +73,7 @@ public class GameManager : MonoSingleton<GameManager>
         return Enemies.Where(enemy =>
             GetIsWithinSkillRangeAToB(
                 range: range, 
-                a: Player.Instance._transform, 
-                b: enemy._transform)).ToArray();
+                a: Player.Instance._Transform, 
+                b: enemy._Transform)).ToArray();
      }
 }

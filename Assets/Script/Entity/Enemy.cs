@@ -20,6 +20,6 @@ public class Enemy : Entity
 
     public virtual void HitPlayer() // enemy do skill or attack
     {
-        
+        // TODO show enemy's attack effect
     }
 }

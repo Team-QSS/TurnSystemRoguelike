@@ -18,12 +18,12 @@ public sealed class ShieldCard : Card
     public override void Active()
     {
         base.Active();
-
+        // TODO 
         var rotations = GameManager.Instance.Enemies.
             Where(enemy => enemy.IsHit).
             Select(enemy => 
-                (enemy._transform.x - Player.Instance._transform.x, 
-                    enemy._transform.y - Player.Instance._transform.y)).ToArray();
+                (enemy._Transform.x - Player.Instance._Transform.x, 
+                    enemy._Transform.y - Player.Instance._Transform.y)).ToArray();
     }
     
 }

@@ -18,12 +18,12 @@ public class Entity
     }
 
     public int Hp;
-    public EntityTransform _transform { get; protected set; }
+    public EntityTransform _Transform { get; protected set; }
 
     protected Entity(int hp, EntityTransform entityTransform)
     {
         Hp = hp;
-        _transform = entityTransform;
+        _Transform = entityTransform;
     }
 
     protected void GetDirection(byte rotation, out int vertical, out int horizontal)
@@ -39,9 +39,9 @@ public class Entity
         
         GetDirection(rotation, out vertical, out horizontal);
 
-        _transform.x = horizontal * value;
-        _transform.y = vertical * value;
-        _transform.rotation = rotation;
+        _Transform.x = horizontal * value;
+        _Transform.y = vertical * value;
+        _Transform.rotation = rotation;
         
         // TODO move game obj
     }

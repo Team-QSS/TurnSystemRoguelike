@@ -18,7 +18,7 @@ public sealed class AttackCard : Card
     {
         base.Active();
         
-        foreach (var enemy in GameManager.Instance.GetEnemiesWithinAttackRanges(Player.Instance._transform.rotation, Range))
+        foreach (var enemy in GameManager.Instance.GetEnemiesWithinAttackRanges(Player.Instance._Transform.rotation, Range))
         {
             enemy.Hp -= Amount;
         }

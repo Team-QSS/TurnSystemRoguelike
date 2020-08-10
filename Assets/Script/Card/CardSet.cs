@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public static class CardSet
 {
-    private static List<KeyValuePair<CardType, int>> _cards = new List<KeyValuePair<CardType, int>>();
-    private static List<KeyValuePair<CardType, int>> _cardSetBuffer = new List<KeyValuePair<CardType, int>>();
-    private static Queue<KeyValuePair<CardType, int>> _cardSet = new Queue<KeyValuePair<CardType, int>>();
+    private static readonly List<KeyValuePair<CardType, int>> _cards = new List<KeyValuePair<CardType, int>>();
+    private static readonly Queue<KeyValuePair<CardType, int>> _cardSet = new Queue<KeyValuePair<CardType, int>>();
+    private static readonly List<KeyValuePair<CardType, int>> _usedCards = new List<KeyValuePair<CardType, int>>();
     
     public static KeyValuePair<CardType, int>[] Hands { get; private set;} = 
     {
@@ -16,7 +16,7 @@ public static class CardSet
         new KeyValuePair<CardType, int>(CardType.None, -1), new KeyValuePair<CardType, int>(CardType.None, -1)
     };
 
-    private static bool[] _handFlags = new bool[6];
+    private static readonly bool[] _handFlags = new bool[6];
     
     public const int MaxHandsCount = 6;
     
@@ -38,16 +38,16 @@ public static class CardSet
     public static void ResetCardSet()
     {
         _cardSet.Clear();
-        _cardSetBuffer = _cards;
 
-        while (_cardSetBuffer.Count > 0)
+        while (_usedCards.Count > 0)
         {
-            int idx = Random.Range(0, _cardSetBuffer.Count);
-            _cardSet.Enqueue(_cardSetBuffer[idx]);
-            _cardSetBuffer.RemoveAt(idx);
+            int index = Random.Range(0, _usedCards.Count);
+            
+            _cardSet.Enqueue(_usedCards[index]);
+            _usedCards.RemoveAt(index);
         }
         
-        CardMover.Instance.ResetCardSet();
+        CardMover.Instance.PlayResetCardSet();
     }
 
     public static void PullCard()
@@ -59,6 +59,12 @@ public static class CardSet
                 Hands[i] = _cardSet.Dequeue();
                 _handFlags[i] = true;
                 CardMover.Instance.PullCard(i);
+
+                if (_cardSet.Count == 0)
+                {
+                    ResetCardSet();
+                }
+                
                 return;
             }
         }
@@ -68,6 +74,7 @@ public static class CardSet
     {
         if (_handFlags[CodeToIdx[rotation]])
         {
+            _usedCards.Add(Hands[CodeToIdx[rotation]]);
             CardDataParser.GetCard(Hands[CodeToIdx[rotation]]).Active();
             _handFlags[CodeToIdx[rotation]] = false;
             CardMover.Instance.UseCard(CodeToIdx[rotation]);
