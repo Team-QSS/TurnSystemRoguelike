@@ -1,14 +1,23 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
 public static class CardSet
 {
-    private static List<Card> _cards = new List<Card>();
-    private static List<Card> _randCards = new List<Card>();
-    public static Text CardCount;
-    private static Queue<Card> _cardSet = new Queue<Card>();
-    private static List<Card> _hands = new List<Card>();
+    private static readonly List<KeyValuePair<CardType, int>> _cards = new List<KeyValuePair<CardType, int>>();
+    private static readonly Queue<KeyValuePair<CardType, int>> _cardSet = new Queue<KeyValuePair<CardType, int>>();
+    private static readonly List<KeyValuePair<CardType, int>> _usedCards = new List<KeyValuePair<CardType, int>>();
+    
+    public static KeyValuePair<CardType, int>[] Hands { get; private set;} = 
+    {
+        new KeyValuePair<CardType, int>(CardType.None, -1), new KeyValuePair<CardType, int>(CardType.None, -1),
+        new KeyValuePair<CardType, int>(CardType.None, -1), new KeyValuePair<CardType, int>(CardType.None, -1),
+        new KeyValuePair<CardType, int>(CardType.None, -1), new KeyValuePair<CardType, int>(CardType.None, -1)
+    };
+
+    private static readonly bool[] _handFlags = new bool[6];
+    
     public const int MaxHandsCount = 6;
     
     private static readonly Dictionary<byte, int> CodeToIdx = new Dictionary<byte, int>
@@ -23,63 +32,60 @@ public static class CardSet
 
     public static void AddCardSet(CardType type, int cardId)
     {
-        Card card = null;
-        
-        switch (type)
-        {
-            case CardType.Attack:
-                card = CardDataParser.AttackCards[cardId];
-                break;
-            case CardType.Shield:
-                card = CardDataParser.ShieldCards[cardId];
-                break;
-            case CardType.Skill:
-                card = CardDataParser.SkillCards[cardId];
-                break;
-        }
-
-        _cards.Add(card);
+        _cards.Add(new KeyValuePair<CardType, int>(type, cardId));
     }
 
     public static void ResetCardSet()
     {
         _cardSet.Clear();
-        _randCards = _cards;
 
-        while (_randCards.Count > 0)
+        while (_usedCards.Count > 0)
         {
-            int idx = Random.Range(0, _randCards.Count);
-            _cardSet.Enqueue(_randCards[idx]);
-            _randCards.RemoveAt(idx);
+            int index = Random.Range(0, _usedCards.Count);
+            
+            _cardSet.Enqueue(_usedCards[index]);
+            _usedCards.RemoveAt(index);
         }
-
-        CardCount.text = _cardSet.Count.ToString();
+        
+        CardMover.Instance.PlayResetCardSet();
     }
 
     public static void PullCard()
     {
-        if (_hands.Count < MaxHandsCount)
+        for (int i = 0; i < _handFlags.Length; ++i)
         {
-            _hands.Add(_cardSet.Dequeue());
+            if (!_handFlags[i])
+            {
+                Hands[i] = _cardSet.Dequeue();
+                _handFlags[i] = true;
+                CardMover.Instance.PullCard(i);
+
+                if (_cardSet.Count == 0)
+                {
+                    ResetCardSet();
+                }
+                
+                return;
+            }
         }
     }
 
     public static bool UseCard(byte rotation)
     {
-        if (_hands.Count == 0)
+        if (_handFlags[CodeToIdx[rotation]])
         {
-            return false;
-        }
-        
-        if (CodeToIdx.ContainsKey(rotation))
-        {
-            _hands[CodeToIdx[rotation]].Active();
-            _hands.RemoveAt(CodeToIdx[rotation]);
+            _usedCards.Add(Hands[CodeToIdx[rotation]]);
+            CardDataParser.GetCard(Hands[CodeToIdx[rotation]]).Active();
+            _handFlags[CodeToIdx[rotation]] = false;
+            CardMover.Instance.UseCard(CodeToIdx[rotation]);
             return true;
         }
-        else
-        {
-            return false;
-        }
+
+        return false;
+    }
+
+    public static int GetCardSetCount()
+    {
+        return _cardSet.Count;
     }
 }

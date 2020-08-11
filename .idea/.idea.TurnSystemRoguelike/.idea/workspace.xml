@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6135b2f7-049d-4aa2-b0cc-c225cf05e111" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Room_10by10.prefab" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Room_10by10.prefab.meta" beforeDir="false" />
@@ -75,8 +74,6 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Script/CardData.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entity/Entity.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Entity/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Singleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Lib/Singleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Lib/MonoSingleton.cs" />
@@ -84,17 +81,25 @@
         <option value="$PROJECT_DIR$/Assets/Script/MapGeneration/SpawnObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/MapGeneration/LevelGeneration.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/GameSystem/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Util/ResourceExtension.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/CardData.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Parser/JsonParser.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Util/ResourceExtension.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/UI/CardSetViewer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/CardData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/UI/HpViewer.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/Card.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Parser/CardDataParser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Lib/MonoSingleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameSystem/Rotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entity/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/SkillCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameSystem/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entity/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Entity/Entity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/UI/CardMover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" />
       </list>
     </option>
   </component>
@@ -137,7 +142,24 @@
       <workItem from="1594642642145" duration="5714000" />
       <workItem from="1594708338419" duration="12584000" />
       <workItem from="1594729878237" duration="663000" />
-      <workItem from="1594733805196" duration="5944000" />
+      <workItem from="1594733805196" duration="15476000" />
+      <workItem from="1594858635564" duration="1525000" />
+      <workItem from="1594907714408" duration="1391000" />
+      <workItem from="1594972598934" duration="1789000" />
+      <workItem from="1595229451831" duration="9486000" />
+      <workItem from="1595328660774" duration="6918000" />
+      <workItem from="1595506840015" duration="3111000" />
+      <workItem from="1595771183224" duration="4906000" />
+      <workItem from="1595859004093" duration="1556000" />
+      <workItem from="1595897524606" duration="7432000" />
+      <workItem from="1595944229237" duration="815000" />
+      <workItem from="1595988657778" duration="6230000" />
+      <workItem from="1596032323663" duration="2699000" />
+      <workItem from="1596067894637" duration="16668000" />
+      <workItem from="1596412265950" duration="8291000" />
+      <workItem from="1596501309981" duration="3342000" />
+      <workItem from="1596539695010" duration="14293000" />
+      <workItem from="1597041065296" duration="4022000" />
     </task>
     <servers />
   </component>

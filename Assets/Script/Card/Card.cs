@@ -21,8 +21,8 @@ public class Card
 
     protected string cardName;
     protected string description;
-    protected CardFXData cardFXData;
-
+    
+    public CardFXData cardFXData { get; private set; }
     public int Amount { get; protected set; }
     public CardType Type { get; protected set; }
     public int CardId { get; protected set; } // card code

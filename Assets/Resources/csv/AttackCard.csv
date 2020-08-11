@@ -1,2 +1,2 @@
-card_id,card_name,range_x,range_y,damage,description
+card_id,card_name,range_x,range_y,amount,description
 1,Test,3,2,10,테스트

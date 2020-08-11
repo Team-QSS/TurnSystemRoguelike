@@ -12,7 +12,6 @@
             <e p="Card.cs" t="Include" />
             <e p="CardData.cs" t="Include" />
             <e p="CardSet.cs" t="Include" />
-            <e p="Rotation.cs" t="Include" />
             <e p="ShieldCard.cs" t="Include" />
             <e p="SkillCard.cs" t="Include" />
           </e>
@@ -23,16 +22,21 @@
           </e>
           <e p="GameSystem" t="Include">
             <e p="GameManager.cs" t="Include" />
+            <e p="Rotation.cs" t="Include" />
           </e>
           <e p="MapGeneration" t="Include">
             <e p="LevelGeneration.cs" t="Include" />
             <e p="SpawnObject.cs" t="Include" />
           </e>
           <e p="Lib" t="Include">
-            <e p="Singleton.cs" t="Include" />
+            <e p="MonoSingleton.cs" t="Include" />
           </e>
           <e p="Parser" t="Include">
             <e p="CardDataParser.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="CardMover.cs" t="Include" />
+            <e p="HpViewer.cs" t="Include" />
           </e>
         </e>
         <e p="Util" t="Include">
