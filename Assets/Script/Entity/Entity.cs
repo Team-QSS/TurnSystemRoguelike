@@ -5,37 +5,43 @@ public class Entity
 {
     public class EntityTransform
     {
-        public int X;
-        public int Y;
-        public byte _Rotation;
+        public int x;
+        public int y;
+        public byte rotation;
 
-        EntityTransform(int x, int y, byte rotation)
+        public EntityTransform(int x, int y, byte rotation)
         {
-            X = x;
-            Y = y;
-            _Rotation = rotation;
+            this.x = x;
+            this.y = y;
+            this.rotation = rotation;
         }
     }
 
-    [HideInInspector] public int Hp { get; protected set; }
-    [HideInInspector] public EntityTransform _transform { get; protected set; }
+    public int Hp;
+    public EntityTransform _Transform { get; protected set; }
 
     protected Entity(int hp, EntityTransform entityTransform)
     {
         Hp = hp;
-        _transform = entityTransform;
+        _Transform = entityTransform;
     }
 
+    protected void GetDirection(byte rotation, out int vertical, out int horizontal)
+    {
+        vertical = (rotation & (byte) Rotation.Up) == (byte) Rotation.Up ? 1 : (rotation & (byte) Rotation.Down) == (byte)Rotation.Down ? -1 : 0;
+        horizontal = (rotation & (byte) Rotation.Right) == (byte) Rotation.Right ? 1 : (rotation & (byte) Rotation.Left) == (byte)Rotation.Left ? -1 : 0;
+    }
+    
     public virtual void Move(byte rotation, int value)
     {
-        int vertical = (rotation & (byte) Rotation.Up) == (byte) Rotation.Up ? 1 : 
-            (rotation & (byte) Rotation.Down) == (byte)Rotation.Down ? -1 : 0;
-        int horizontal = (rotation & (byte) Rotation.Right) == (byte) Rotation.Right ? 1 : 
-            (rotation & (byte) Rotation.Left) == (byte)Rotation.Left ? -1 : 0;
+        int vertical = 0;
+        int horizontal = 0;
+        
+        GetDirection(rotation, out vertical, out horizontal);
 
-        _transform.X = horizontal * value;
-        _transform.Y = vertical * value;
-        _transform._Rotation = rotation;
+        _Transform.x = horizontal * value;
+        _Transform.y = vertical * value;
+        _Transform.rotation = rotation;
         
         // TODO move game obj
     }

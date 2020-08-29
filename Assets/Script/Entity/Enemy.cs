@@ -2,18 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public sealed class Enemy : Entity
+public class Enemy : Entity
 {
     // routine 관리
+    public bool IsHit { get; private set; }
     
     public Enemy(int hp, EntityTransform entityTransform) : base(hp, entityTransform)
     {
-        
+        IsHit = false;
     }
 
     public override void Move(byte rotation, int value)
     {
-        // 플레이어가 가까우면 공격
         base.Move(rotation, value);
+        IsHit = false;
+    }
+
+    public virtual void HitPlayer() // enemy do skill or attack
+    {
+        // TODO show enemy's attack effect
     }
 }

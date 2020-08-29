@@ -17,7 +17,11 @@ public sealed class AttackCard : Card
     public override void Active()
     {
         base.Active();
-        // TODO cal position
+        
+        foreach (var enemy in GameManager.Instance.GetEnemiesWithinAttackRanges(Player.Instance._Transform.rotation, Range))
+        {
+            enemy.Hp -= Amount;
+        }
     }
     
 }
