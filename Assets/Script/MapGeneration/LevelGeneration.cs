@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class LevelGeneration : MonoBehaviour
 {
-    public Transform[] startingPositions;
+    public Transform startingPositions;
     public GameObject[] rooms;
     private int[,] map = new int[5, 5];
     void MapGen(int x, int y, int forceBit)
@@ -44,12 +44,6 @@ public class LevelGeneration : MonoBehaviour
     {
         //int randStartingPos = Random.Range(0, startingPositions.Length);
         //transform.position = startingPositions[randStartingPos].position;
-        MapGen(2, 2, 0);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        MapGen((int) startingPositions.position.x, (int) startingPositions.position.y, 0);
     }
 }
