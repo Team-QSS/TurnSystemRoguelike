@@ -24,12 +24,12 @@
           <e p="GameSystem" t="Include">
             <e p="GameManager.cs" t="Include" />
           </e>
+          <e p="Lib" t="Include">
+            <e p="Singleton.cs" t="Include" />
+          </e>
           <e p="MapGeneration" t="Include">
             <e p="LevelGeneration.cs" t="Include" />
             <e p="SpawnObject.cs" t="Include" />
-          </e>
-          <e p="Lib" t="Include">
-            <e p="Singleton.cs" t="Include" />
           </e>
           <e p="Parser" t="Include">
             <e p="CardDataParser.cs" t="Include" />
