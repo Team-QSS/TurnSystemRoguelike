@@ -3,7 +3,6 @@
 /*\
 작성 전 읽어주세요. 탭이 아니라 띄어쓰기 2번입니다.\
 필요없는 내용은 적지 말아주세요. 게임을 개발 할수록 __더러워질__ 예정입나다.\
-그리고 제발 남이 작성한 코드를 건들지 말아주세요.\
 */
 
 
@@ -16,7 +15,7 @@
     - (이후 더욱 구체적인 기획)
 
 2. 개발 부분\
-  2-1. 주보성: Card, Entity, Json Parsing\
+  2-1. 주보성: Card, Entity, Csv Parsing\
   2-2. 김선민: Random Map Generation (~ing)\
   2-3. 김기욱: Random Map Generation  
 
