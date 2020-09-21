@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Enemy : Entity
+﻿public class Enemy : Entity
 {
     // routine 관리
     public bool IsHit { get; private set; }
