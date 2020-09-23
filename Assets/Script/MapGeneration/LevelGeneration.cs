@@ -29,7 +29,7 @@ public class LevelGeneration : MonoBehaviour
 
         map[x, y] = randRoom;
         Vector3 mapPos = new Vector3((y - 2) * 5f, (2 - x) * 5f, 0);
-        Instantiate(rooms[randRoom], mapPos, Quaternion.identity);
+        Instantiate(rooms[randRoom], mapPos, Quaternion.identity).transform.SetParent(startingPositions);
         
         Debug.Log($"{x},{y}: {map[x, y]}");
         
@@ -42,8 +42,11 @@ public class LevelGeneration : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //int randStartingPos = Random.Range(0, startingPositions.Length);
-        //transform.position = startingPositions[randStartingPos].position;
+        if (startingPositions == null)
+        {
+            startingPositions = Instantiate(new GameObject(),Vector3.zero, Quaternion.identity).transform;
+        }
+        
         MapGen((int) startingPositions.position.x, (int) startingPositions.position.y, 0);
     }
 }

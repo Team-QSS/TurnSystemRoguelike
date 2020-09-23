@@ -25,7 +25,7 @@
             <e p="Rotation.cs" t="Include" />
           </e>
           <e p="Lib" t="Include">
-            <e p="Singleton.cs" t="Include" />
+            <e p="MonoSingleton.cs" t="Include" />
           </e>
           <e p="MapGeneration" t="Include">
             <e p="LevelGeneration.cs" t="Include" />

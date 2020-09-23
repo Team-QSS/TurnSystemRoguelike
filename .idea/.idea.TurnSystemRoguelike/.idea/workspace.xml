@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6135b2f7-049d-4aa2-b0cc-c225cf05e111" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TurnSystemRoguelike/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AudioClip.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/CardSprite.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Effect.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/HeartSprite.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapGenerationTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MapGenerationTest.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/MapGeneration/LevelGeneration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/MapGeneration/LevelGeneration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/MapGeneration/SpawnObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/MapGeneration/SpawnObject.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +24,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Card/CardData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Card/Card.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/MapGeneration/SpawnObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/UI/HpViewer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Entity/Player.cs" root0="FORCE_HIGHLIGHTING" />
@@ -40,7 +40,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Lib/Singleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Lib/MonoSingleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Entity/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/MapGeneration/SpawnObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/JsonParser/JsonParser.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/Rotation.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Parser/JsonParser.cs" />
@@ -50,7 +49,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/UI/HpViewer.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/Card.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Parser/CardDataParser.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/MapGeneration/LevelGeneration.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/AttackCard.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Lib/MonoSingleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameSystem/Rotation.cs" />
@@ -62,6 +60,8 @@
         <option value="$PROJECT_DIR$/Assets/Script/Card/ShieldCard.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/UI/CardMover.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Card/CardSet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/MapGeneration/SpawnObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/MapGeneration/LevelGeneration.cs" />
       </list>
     </option>
   </component>
@@ -126,6 +126,8 @@
       <workItem from="1596501309981" duration="3342000" />
       <workItem from="1596539695010" duration="14293000" />
       <workItem from="1597041065296" duration="4022000" />
+      <workItem from="1598701359035" duration="1297000" />
+      <workItem from="1600854985297" duration="2343000" />
     </task>
     <servers />
   </component>
